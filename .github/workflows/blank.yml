@@ -23,7 +23,15 @@ jobs:
       env:
         SECRET: ${{ secrets.SECRET }}
       run: echo $${{ github.event.inputs.secret_name }}
-    - run: |
+    - name: fake test
+      run: |
         echo "Hello ${{ github.event.inputs.name }}!"
         echo "- in ${{ github.event.inputs.home }}!"
         echo $SECRET
+        mkdir -p output/test
+        echo "haha" > output/test/report.txt
+    - name: upload test report
+      uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage-report
+        path: output/test/report.txt
