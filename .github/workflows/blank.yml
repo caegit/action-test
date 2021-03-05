@@ -21,8 +21,8 @@ jobs:
     steps:
     - name: set env
       env:
-        SECRET: ${{ secrets.SuperSecret }}
-      run: echo $SECRET
+        SECRET: ${{ secrets.SECRET }}
+      run: echo $${{ github.event.inputs.secret_name }}
     - run: |
         echo "Hello ${{ github.event.inputs.name }}!"
         echo "- in ${{ github.event.inputs.home }}!"
