@@ -10,6 +10,15 @@
     {
         "name": "aa",
         "category": "abc",
-        "conditions": "c"
+        "conditions": [
+            "a"
+        ]
+    },
+    {
+        "name": "aa",
+        "category": 1,
+        "conditions": [
+            "b"
+        ]
     }
 ]
