@@ -1,0 +1,17 @@
+name: Validation JSON
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  json:
+    runs-on: ubuntu-latest
+    steps:
+    - name: validate
+      uses: GrantBirki/json-yaml-validate@v2.3.1 # replace with the latest version
+      with:
+        json_schema: schemas/schema.json # validate JSON files against the schema
+

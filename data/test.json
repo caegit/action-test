@@ -1,0 +1,10 @@
+[
+    {
+        "name": "aa",
+        "category": "abc",
+        "conditions": [
+            "a",
+            "b"
+        ]
+    }
+]
