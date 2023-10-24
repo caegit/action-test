@@ -1,4 +1,10 @@
 {
-    "name": "abc",
-    "topic": "t"
+    "key1": {
+        "name": "abc",
+        "topic": "t"
+    },
+    "key2": {
+        "name": "abc",
+        "topic": "t"
+    }
 }

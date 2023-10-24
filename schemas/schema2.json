@@ -1,16 +1,21 @@
 {
     "type": "object",
-    "properties": {
-        "name": {
-            "type": "string"
+    "additionalProperties": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string"
+            },
+            "topic": {
+                "type": "string"
+            }
         },
-        "topic": {
-            "type": "string"
-        }
+        "required": [
+            "name",
+            "topic"
+        ]
     },
-    "required": [
-        "name",
-        "topic"
-    ],
-    "additionalProperties": false
+    "patternProperties": {
+        ".*": {}
+    }
 }
