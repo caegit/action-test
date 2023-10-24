@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "additionalProperties": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string"
+            },
+            "topic": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "topic"
+        ]
+    },
+    "patternProperties": {
+        ".*": {}
+    }
+}

@@ -2,6 +2,9 @@
     {
         "name": "aa",
         "category": "abc",
+        "lang": {
+            "en": "aa"
+        },
         "conditions": [
             "a",
             "b"
@@ -10,6 +13,21 @@
     {
         "name": "aa",
         "category": "abc",
-        "conditions": "c"
+        "lang": {
+            "en": "aa"
+        },
+        "conditions": [
+            "a"
+        ]
+    },
+    {
+        "name": "aa",
+        "category": "1",
+        "lang": {
+            "en": "aa"
+        },
+        "conditions": [
+            "b"
+        ]
     }
 ]

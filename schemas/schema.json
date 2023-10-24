@@ -9,13 +9,22 @@
             "category": {
                 "type": "string"
             },
+            "lang": {
+                "type": "object",
+                "properties": {
+                    "en": {
+                        "type": "string"
+                    }
+                }
+            },
             "conditions": {
                 "type": "array"
             }
         },
         "required": [
             "name",
-            "category"
+            "category",
+            "lang"
         ],
         "additionalProperties": false
     }
